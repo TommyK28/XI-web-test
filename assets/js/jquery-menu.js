@@ -7,9 +7,8 @@ $(document).ready(function () {
 	});
 //Open-close mobile sub-nav menu
 	$('.js-arrow-btn').click(function () {
-		$(this).parent().find('.js-menu__sub-nav').slideToggle();
-		$(this).parent().find('.js-menu__sub-nav').toggleClass('js-menu__sub-nav--open');
-		$(this).parent().find('.js-arrow-btn svg').toggleClass('js-arrow--rotate');
+		$(this).parent().find('.menu__sub-nav').slideToggle();
+		$(this).parent().find('.js-arrow-btn').toggleClass('arrow-btn--rotate');
 	});
 	//After scrolling set header position fixed
 	$(window).scroll(function () {

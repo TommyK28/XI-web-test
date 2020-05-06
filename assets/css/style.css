@@ -1,6 +1,47 @@
 /*-----------------------------------------------------------------*/
-/* GLOBAL SETTINGS
+/* FONTS
 /*-----------------------------------------------------------------*/
+
+/* roboto-300 - latin_latin-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-display: fallback;
+	src: local('Roboto-Light'),
+		url('../fonts/roboto-v20-latin_latin-ext-300.woff2') format('woff2');
+}
+/* roboto-regular - latin_latin-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-display: fallback;
+	src: local('Roboto-Regular'),
+		url('../fonts/roboto-v20-latin_latin-ext-regular.woff2') format('woff2');
+}
+/* roboto-500 - latin_latin-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-display: fallback;
+	src: local('Roboto-Medium'),
+		url('../fonts/roboto-v20-latin_latin-ext-500.woff2') format('woff2');
+}
+/* roboto-700 - latin_latin-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-display: fallback;
+	src: local('Roboto-Bold'),
+		url('../fonts/roboto-v20-latin_latin-ext-700.woff2') format('woff2');
+}
+
+/* Global settings
+----------------------------------------- */
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -12,6 +53,7 @@ html {
 }
 
 body {
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 }
 
@@ -26,7 +68,8 @@ a {
 }
 
 /* CONTAINER AND ROW SETTINGS
-	----------------------------------------- */
+----------------------------------------- */
+
 .container {
 	max-width: 1340px;
 	margin: 0 auto;
@@ -72,60 +115,10 @@ a {
 	overflow: hidden;
 }
 
-/* FONTS
-	----------------------------------------- */
-
-/* roboto-300 - latin_latin-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 300;
-	font-display: fallback;
-	src: local('Roboto-Light'),
-		url('../fonts/roboto-v20-latin_latin-ext-300.woff2') format('woff2');
-}
-/* roboto-regular - latin_latin-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-display: fallback;
-	src: local('Roboto-Regular'),
-		url('../fonts/roboto-v20-latin_latin-ext-regular.woff2') format('woff2');
-}
-/* roboto-500 - latin_latin-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 500;
-	font-display: fallback;
-	src: local('Roboto-Medium'),
-		url('../fonts/roboto-v20-latin_latin-ext-500.woff2') format('woff2');
-}
-/* roboto-700 - latin_latin-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 700;
-	font-display: fallback;
-	src: local('Roboto-Bold'),
-		url('../fonts/roboto-v20-latin_latin-ext-700.woff2') format('woff2');
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-	font-family: 'Roboto', sans-serif;
-}
-
 /*-----------------------------------------------------------------*/
 /* HEADER
 /*-----------------------------------------------------------------*/
+
 .header {
 	background: #fff;
 	z-index: 900;
@@ -143,7 +136,8 @@ a {
 }
 
 /* Logo
-	----------------------------------------- */
+----------------------------------------- */
+
 .logo {
 	width: 54px;
 	height: 54px;
@@ -156,7 +150,8 @@ a {
 }
 
 /* Nav
-	----------------------------------------- */
+----------------------------------------- */
+
 @media (min-width: 1201px) {
 	.header__nav {
 		position: relative;
@@ -255,6 +250,7 @@ a {
 .menu-btn {
 	position: relative;
 	padding-right: 44px;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	letter-spacing: 1.6px;
 	font-weight: 600;
@@ -457,12 +453,12 @@ a {
 	}
 }
 
-.footer__nav-column li {
+.nav__column li {
 	font-size: 0.9rem;
 	padding: 0 0 15px 0;
 }
 
-.footer__nav-column li a {
+.nav__column li a {
 	position: relative;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -473,7 +469,7 @@ a {
 	padding-top: 10px;
 }
 
-.footer__nav-column li a:hover {
+.nav__column li a:hover {
 	text-decoration: underline;
 }
 

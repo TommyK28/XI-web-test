@@ -8,7 +8,7 @@ $(document).ready(function () {
 //Open-close mobile sub-nav menu
 	$('.js-arrow-btn').click(function () {
 		$(this).parent().find('.menu__sub-nav').slideToggle();
-		$(this).parent().find('.js-arrow-btn').toggleClass('arrow-btn--rotate');
+		$(this).toggleClass('arrow-btn--rotate');
 	});
 	//After scrolling set header position fixed
 	$(window).scroll(function () {
